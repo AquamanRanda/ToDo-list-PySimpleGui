@@ -10,7 +10,6 @@ layout = [
     [sg.Text("ToDo List")],
     [sg.Listbox(values=tasks, size=(40, 10), key="items")],[sg.Text("Completed List")],[sg.Listbox(values=tasks, size=(40, 10), key="Completed")],
     [sg.Button('Delete'), sg.Button('Edit'),sg.Button("Complete"),sg.Button("prioritize"),sg.Button('Exit')],
-    [sg.Text("", auto_size_text=False, key="tell")]
 ]
 
 window = sg.Window('ToDo App', layout)
